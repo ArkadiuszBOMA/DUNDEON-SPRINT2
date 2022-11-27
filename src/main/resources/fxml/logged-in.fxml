@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codecool.dungeoncrawl.controllers.Controller">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="373.0" fitWidth="295.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icones/knight.jpg" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField alignment="CENTER" disable="true" editable="false" layoutX="11.0" layoutY="32.0" prefHeight="54.0" prefWidth="179.0" promptText="Welcome Knight" style="-fx-background-color: transparent; -fx-cursor: hand;" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="Old English Text MT" size="22.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect></TextField>
+            <TextField fx:id="tu_username" layoutX="29.0" layoutY="149.0" promptText="User Name" style="-fx-background-color: trans;arent; -fx-cursor: hand;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextField>
+            <PasswordField fx:id="tu_password" accessibleRole="IMAGE_VIEW" layoutX="29.0" layoutY="183.0" prefHeight="34.0" prefWidth="117.0" promptText="Password" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></PasswordField>
+            <Button fx:id="button_login" layoutX="29.0" layoutY="242.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="143.0" style="-fx-background-color: #7c7c7c;" text="Login" textFill="WHITE" />
+            <Label layoutX="29.0" layoutY="284.0" text="Not a user?" textFill="#fcf8f8" />
+            <Button fx:id="button_signin" layoutX="100.0" layoutY="280.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Signe up!" textFill="#e8e00e" underline="true" />
+            <Button fx:id="button_quit" layoutX="115.0" layoutY="344.0" mnemonicParsing="false" prefHeight="7.0" prefWidth="54.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="EXIT" textFill="#e52c10" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

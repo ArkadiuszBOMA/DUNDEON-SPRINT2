@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codecool.dungeoncrawl.controllers.ExitController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="373.0" fitWidth="295.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icones/knight.jpg" />
+               </image>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="25.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="See you Next Time" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="Old English Text MT" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="button_logout" layoutX="25.0" layoutY="250.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: #7c7c7c;" text="Logout" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
