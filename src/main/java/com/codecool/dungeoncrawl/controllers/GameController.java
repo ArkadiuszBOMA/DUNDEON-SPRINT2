@@ -58,20 +58,12 @@ public class GameController{
     Button button_save_g;
     @FXML
     Button button_quit_g;
-
-    @FXML
-    public void setCanvas(Canvas canvas) {this.canvas = canvas;}
-
     @FXML
     GameMap map = MapLoader.loadMap(1);
     @FXML
-    Canvas canvas = new Canvas(
-            25 * Tiles.TILE_WIDTH,
-            20 * Tiles.TILE_WIDTH);
+    Canvas canvas;
     @FXML
-    GraphicsContext context = canvas.getGraphicsContext2D();
 
-    @FXML
     public void start(String name) throws Exception {
         setLevel(1);
         FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("/fxml/GameScreen.fxml"));
@@ -260,6 +252,7 @@ public class GameController{
 
     @FXML
     private void refresh() {
+        GraphicsContext context = canvas.getGraphicsContext2D();
         int coutEnemies = 0;
         for (int x = 0; x < map.getWidth(); x++) {
             for (int y = 0; y < map.getHeight(); y++){
@@ -279,7 +272,6 @@ public class GameController{
             win.soundPlay(SoundEffect.getWin());
         }
 
-        context.setFill(Color.BLACK);
         context.fillRect(0, 0, canvas.getWidth(), canvas.getHeight());
 
         for (int x = map.getPlayer().getX() - 100; x < map.getPlayer().getX() + 100; x++) {
@@ -312,8 +304,8 @@ public class GameController{
         if(map.getPlayer().getInventory()[7] != 0) {
             key.setVisible(true);
             infoText.setText("You have got the key, find the exit to move to next level");
-            ;}
-        if (map.nextLevel() && map.getPlayer().isKey() && level <10) {
+            }
+        if (map.nextLevel() && map.getPlayer().isKey() && (level < 10)) {
             infoText.setText("Find the key ");
             setLevel(level+1);
             map = MapLoader.loadMap(level);

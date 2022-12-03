@@ -16,6 +16,8 @@ import java.util.regex.Pattern;
 
 public class DBUtils {
 
+
+
     public static final String URLDB =  "jdbc:postgresql://pgsql14.server791429.nazwa.pl:5432/";
     public static final String DBADB =  "server791429_DUNGEON";
     public static final String PASDB =  "!!o1hkuzq3axEvzJf7";
@@ -46,7 +48,7 @@ public class DBUtils {
         PreparedStatement psInsert = null;
         PreparedStatement psCheckUserExist = null;
         ResultSet resultSet = null;
-        String ePattern = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$";
+        String ePattern = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$";
         String ePassword = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%]).{8,10}$";
         Pattern p = Pattern.compile(ePattern);
         Pattern pPassword = Pattern.compile(ePassword);
