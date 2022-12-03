@@ -1,23 +1,18 @@
 package com.codecool.dungeoncrawl.controllers;
-
-import com.codecool.dungeoncrawl.Main;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import com.codecool.dungeoncrawl.utils.DBUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
-
+import javafx.scene.layout.BorderPane;
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
+import java.security.NoSuchAlgorithmException;
+import java.security.spec.InvalidKeySpecException;
+import java.sql.SQLException;
 
-public class SigneUpController implements Initializable {
+public class SigneUpController {
+    private MainController mainController;
 
     @FXML
     public TextField tf_username;
@@ -34,50 +29,77 @@ public class SigneUpController implements Initializable {
     @FXML
     public PasswordField tf_repassword;
     @FXML
-    private Button button_log_in;
-    @FXML
     private Button button_sign_in;
+
     @FXML
-    private Button button_exit;
+    public void exitScreen(){
+        FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("/fxml/ExitScreen.fxml"));
+        BorderPane borderPane;
+        try{
+            borderPane = fxmlLoader.load();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        ExitController exitController = fxmlLoader.getController();
+        exitController.setMainController(mainController);
+        exitController.setPlayerName(tf_username.getText());
+        mainController.setScreen(borderPane);
+    }
+    @FXML
+    public void logInScreen(){
+        FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("/fxml/LogInScreen.fxml"));
+        BorderPane borderPane;
+        try{
+            borderPane = fxmlLoader.load();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        LogInController logInController = fxmlLoader.getController();
+        logInController.setMainController(mainController);
+        mainController.setScreen(borderPane);
+    }
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        button_exit.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                String title = "LOGOUT";
-                try {
-                    FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/fxml/goodbye.fxml"));
-                    Scene scene = new Scene(fxmlLoader.load(), 500, 400);
-                    Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                    stage.setScene(scene);
-                    stage.setTitle(title);
-                    stage.show();
-
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
+    @FXML
+    void initialize(){
+        button_sign_in.setOnAction(event -> {
+            boolean username;
+            try {
+                username = DBUtils.signeUpUser(
+                        tf_firstname.getText(), tf_lastname.getText(),
+                        tf_email.getText(), tf_age.getText(),
+                        tf_password.getText(),
+                        tf_repassword.getText(),
+                        tf_username.getText());
+            } catch (SQLException | NoSuchAlgorithmException | InvalidKeySpecException e) {
+                throw new RuntimeException(e);
             }
-        });
-        button_log_in.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                String title = "LOGIN";
-                try {
-                    FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/fxml/logged-in.fxml"));
-                    Scene scene = new Scene(fxmlLoader.load(), 500, 400);
-                    Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                    stage.setScene(scene);
-                    stage.setTitle(title);
-                    stage.show();
 
+            FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("/fxml/LogInScreen.fxml"));
+            if(username) {
+                        BorderPane borderPane;
+                try{
+                    borderPane = fxmlLoader.load();
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
+                LogInController logInController = fxmlLoader.getController();
+                logInController.setMainController(mainController);
+                mainController.setScreen(borderPane);
+            } else {
+                        BorderPane borderPane;
+                try{
+                    borderPane = fxmlLoader.load();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+                LogInController logInController = fxmlLoader.getController();
+                logInController.setMainController(mainController);
+                mainController.setScreen(borderPane);
             }
         });
     }
-    public void setUserInformations(String username) {
-        button_sign_in.setText("Welcome "+ username + " !");
+
+    public void setMainController(MainController mainController) {
+        this.mainController = mainController;
     }
 }

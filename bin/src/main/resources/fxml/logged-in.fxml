@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="loginBoardPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codecool.dungeoncrawl.controllers.LogInController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="673.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="380.0" fitWidth="340.0" layoutX="190.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icones/knight.jpg" />
+               </image>
+               <effect>
+                  <InnerShadow blurType="ONE_PASS_BOX" height="255.0" radius="127.0" width="255.0" />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="364.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="tu_username" blendMode="LIGHTEN" layoutX="29.0" layoutY="149.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.5" promptText="User Name" style="-fx-background-color: transparent; -fx-cursor: hand;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextField>
+            <PasswordField fx:id="tu_password" accessibleRole="IMAGE_VIEW" blendMode="LIGHTEN" layoutX="29.0" layoutY="183.0" opacity="0.5" prefHeight="34.0" prefWidth="117.0" promptText="Password" style="-fx-background-color: transparent; -fx-cursor: hand;">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></PasswordField>
+            <Button fx:id="button_login" layoutX="37.0" layoutY="289.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="143.0" style="-fx-background-color: #7c7c7c;" text="Login" textFill="WHITE" />
+            <Label layoutX="40.0" layoutY="335.0" text="Not a user?" textFill="#fcf8f8" />
+            <Button fx:id="button_signin" layoutX="104.0" layoutY="331.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Signe up!" textFill="#e8e00e" underline="true" />
+            <Button fx:id="button_quit" layoutX="85.0" layoutY="436.0" mnemonicParsing="false" prefHeight="7.0" prefWidth="54.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="EXIT" textFill="#e52c10" />
+            <TextField alignment="CENTER" blendMode="LIGHTEN" cache="true" cacheHint="QUALITY" disable="true" editable="false" layoutX="11.0" layoutY="32.0" prefHeight="54.0" prefWidth="203.0" promptText="Welcome Knight" style="-fx-background-color: transparent; -fx-cursor: hand;" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="Old English Text MT" size="22.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

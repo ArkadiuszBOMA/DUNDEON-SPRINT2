@@ -3,7 +3,7 @@ package com.codecool.dungeoncrawl.logic.items;
 import com.codecool.dungeoncrawl.logic.Cell;
 
 public class Potion extends Item {
-    int healerPower =4;
+    int healerPower =1;
 
     public int getHealer() {
         return healerPower;

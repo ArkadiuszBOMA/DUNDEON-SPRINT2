@@ -3,7 +3,7 @@ package com.codecool.dungeoncrawl.logic.items;
 import com.codecool.dungeoncrawl.logic.Cell;
 
 public class Diamond extends Item {
-    int healerPower =20;
+    int healerPower =10;
 
     public int getDiamond() {
         return healerPower;

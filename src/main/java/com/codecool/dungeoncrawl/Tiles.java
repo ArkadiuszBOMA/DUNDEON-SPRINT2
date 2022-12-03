@@ -51,6 +51,7 @@ public class Tiles {
         tileMap.put("potion", new Tile(16,25));
         tileMap.put("sword", new Tile(3,29));
         tileMap.put("shield", new Tile(7,26));
+        tileMap.put("helmet", new Tile(23,2));
 
     }
 

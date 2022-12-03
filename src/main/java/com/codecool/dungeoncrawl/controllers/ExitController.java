@@ -1,25 +1,21 @@
 package com.codecool.dungeoncrawl.controllers;
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import com.codecool.dungeoncrawl.utils.UtilsTextHandling;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.text.Text;
 
-import java.net.URL;
-import java.util.ResourceBundle;
+public class ExitController {
 
-public class ExitController implements Initializable {
+    private MainController mainController;
     @FXML
     private Button button_logout;
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        button_logout.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                System.exit(0);
-            }
-        });
+    @FXML
+    private Text playerName;
+    @FXML
+    void initialize() {
+        button_logout.setOnAction(event -> System.exit(0));
     }
-}
+    public void setMainController(MainController mainController) {}
+    @FXML
+    public void setPlayerName(String playerName) {this.playerName.setText(UtilsTextHandling.capitalized(playerName));}}

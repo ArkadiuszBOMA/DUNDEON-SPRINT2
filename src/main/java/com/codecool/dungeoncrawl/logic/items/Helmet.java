@@ -7,12 +7,12 @@ public class Helmet extends Item {
     int protectionPower = 1;
 
 
-    public int getShield() {
+    public int getHelmet() {
         return protectionPower;
     }
 
-    public void setShield(int shield) {
-        this.protectionPower = shield;
+    public void setHelmet(int helmet) {
+        this.protectionPower = helmet;
     }
 
     public Helmet(Cell cell, String name, boolean canTake) {

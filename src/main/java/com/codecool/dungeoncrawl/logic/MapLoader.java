@@ -1,5 +1,4 @@
 package com.codecool.dungeoncrawl.logic;
-
 import com.codecool.dungeoncrawl.logic.actors.*;
 import com.codecool.dungeoncrawl.logic.items.*;
 
@@ -8,8 +7,10 @@ import java.util.Scanner;
 
 public class MapLoader {
     public static GameMap loadMap(int level) {
-        String[] levelMap = new String[]{"/map/map_level1.txt", "/map/map_level2.txt", "/map/map_level3.txt", "/map/map_level4.txt",
-                "/map/map_level5.txt", "/map/map_level6.txt", "/map/map_level7.txt", "/map/map_level8.txt", "/map/map_level9.txt", "/map/map_level10.txt"};
+        String[] levelMap = new String[]{
+                "/map/map_level1.txt", "/map/map_level2.txt", "/map/map_level3.txt","/map/map_level4.txt",
+                "/map/map_level5.txt", "/map/map_level6.txt", "/map/map_level7.txt", "/map/map_level8.txt",
+                "/map/map_level9.txt", "/map/map_level10.txt"};
         InputStream is = MapLoader.class.getResourceAsStream(levelMap[level-1]);
         assert is != null;
         Scanner scanner = new Scanner(is);

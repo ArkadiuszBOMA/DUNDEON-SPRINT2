@@ -1,5 +1,5 @@
 package com.codecool.dungeoncrawl.logic.actors;
-import com.codecool.dungeoncrawl.controllers.SoundEffect;
+import com.codecool.dungeoncrawl.utils.SoundEffect;
 import com.codecool.dungeoncrawl.logic.Cell;
 import com.codecool.dungeoncrawl.logic.CellType;
 import com.codecool.dungeoncrawl.logic.Drawable;
@@ -11,8 +11,11 @@ public abstract class Actor implements Drawable {
     protected int health = 10;
     protected int power = 5;
     protected int shield = 0;
+
+    protected int helmet = 0;
     private boolean key = false;
-    private final int[] inventory = new int[]{0, 0, 0, 0};
+    private final int[] inventory = new int[]{0, 0, 0, 0, 0, 0, 0, 0};
+    //(0-health, 1-sword, 2-shield, 3-helmet, 4-heart, 5-potion, 6-diamond, 7key)
 
     public Actor(Cell cell) {
         this.cell = cell;
@@ -27,6 +30,9 @@ public abstract class Actor implements Drawable {
     }
     public void setShield(int shield) {
         this.shield = shield;
+    }
+    public void setHelmet(int helmet) {
+        this.helmet = helmet;
     }
 
     public void setName(String name) {this.name = name;}
@@ -72,6 +78,7 @@ public abstract class Actor implements Drawable {
     }
     public int getPower() {return power;}
     public int getShield() {return shield;}
+    public int getHelmet() {return helmet;}
     public boolean isKey() {return key;}
     public int[] getInventory() {return inventory;}
 
@@ -86,6 +93,7 @@ public abstract class Actor implements Drawable {
             health += ((Diamond) item).getDiamond();
             ((Diamond) item).setDiamond(0);
             item.getCell().setType(CellType.FLOOR);
+
         } else if (item instanceof Heart) {
             if(health == 0 ) {
                 inventory[0] += ((Heart) item).getHeart();
@@ -95,11 +103,13 @@ public abstract class Actor implements Drawable {
             health += ((Heart) item).getHeart();
             ((Heart) item).setHeart(0);
             item.getCell().setType(CellType.FLOOR);
+
         } else if (item instanceof Potion) {
             health += ((Potion) item).getHealer();
             inventory[0] += ((Potion) item).getHealer();
             ((Potion) item).setHealer(0);
             item.getCell().setType(CellType.FLOOR);
+
         } else if (item instanceof Sword) {
             if(inventory[1] == 0 ) {
                 inventory[1]+=((Sword) item).getHitPower();
@@ -114,8 +124,15 @@ public abstract class Actor implements Drawable {
                 item.getCell().setType(CellType.FLOOR);
             }
 
+        } else if (item instanceof Helmet) {
+            if(inventory[3] == 0 ) {
+                inventory[3]+=((Sword) item).getHitPower();
+                ((Helmet) item).setHelmet(0);
+                item.getCell().setType(CellType.FLOOR);
+            }
+
         } else if (item instanceof Key && !((Key) item).isTaken()) {
-            inventory[3]+=1;
+            inventory[4]+=1;
             key = true;
             ((Key) item).setTaken(true);
             item.getCell().setType(CellType.FLOOR);
@@ -125,8 +142,8 @@ public abstract class Actor implements Drawable {
     public void attackPlayer(Actor actor, Cell cell) {
         System.out.println("Atakuje " + this.getTileName());
         System.out.println("Broni się " + actor.getTileName());
-        actor.setHealth(actor.getHealth() - this.power);
-        this.health = this.health - actor.power + this.shield;
+        actor.setHealth(actor.getHealth() - this.power + actor.getShield() + actor.getHelmet());
+        this.health = this.health - actor.power + this.shield + this.helmet;
         if (actor.getHealth() <= 0) {
             cell.setType(CellType.FLOOR);
             SoundEffect hit = new SoundEffect();

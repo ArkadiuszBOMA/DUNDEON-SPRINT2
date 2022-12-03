@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codecool.dungeoncrawl.controllers.WelcomeController">
+   <left>
+      <AnchorPane prefHeight="1010.0" prefWidth="660.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="380.0" fitWidth="340.0" layoutX="190.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icones/knight.jpg" />
+               </image>
+               <effect>
+                  <InnerShadow height="255.0" radius="127.0" width="255.0" />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Lets Play" textAlignment="CENTER" wrappingWidth="203.6953125" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="Old English Text MT" size="34.0" />
+               </font>
+            </Text>
+            <Label fx:id="label_username" alignment="CENTER" layoutX="33.0" layoutY="88.0" prefHeight="15.0" prefWidth="162.0" text="Label" textFill="#fff9f9">
+               <font>
+                  <Font name="Old English Text MT" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="avatar_w" fitHeight="179.0" fitWidth="106.0" layoutX="70.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icones/player.png" />
+               </image>
+               <effect>
+                  <SepiaTone />
+               </effect></ImageView>
+            <Button fx:id="button_loud_w" layoutX="43.0" layoutY="406.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: #7c7c7c; -fx-text-fill: #360909;" text="Load last game" textFill="#360909">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button layoutX="43.0" layoutY="370.0" mnemonicParsing="false" onAction="#gameScreen" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: #7c7c7c; -fx-text-fill: #360909;" text="Play" textFill="#360909">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button layoutX="43.0" layoutY="441.0" mnemonicParsing="false" onAction="#exitScreen" prefHeight="20.0" prefWidth="150.0" style="-fx-background-color: #7c7c7c; -fx-text-fill: #360909;" text="Logout" textFill="#360909">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

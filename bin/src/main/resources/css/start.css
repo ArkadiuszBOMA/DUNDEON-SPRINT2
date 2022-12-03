@@ -1,0 +1,43 @@
+.root{
+    -fx-background-image: url("/images/startekr.png");
+    -fx-background-size: cover;
+}
+#btn, #start, #quit, #play {
+    -fx-border-color: none;
+    -fx-pref-width: 150px;
+    -fx-alignment: center;
+    -fx-padding: 5 10 5 10;
+    -fx-font-family: "Franklin Gothic Heavy";
+    -fx-font-size: 20px;
+    -fx-text-fill: grey;
+    -fx-background-radius: 5px;
+}
+
+#play {
+    -fx-text-fill: green;
+}
+#quit {
+    -fx-text-fill: red;
+}
+
+#text {
+    -fx-font-size: 30px;
+    -fx-pref-width: 200px;
+    -fx-column-halignment: 20;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+    -fx-font-family: "Helvetica";
+    -fx-padding: 5 10 5 10;
+    -fx-background-radius: 5px;
+}
+
+#name {
+    -fx-font-size: 30px;
+    -fx-pref-width: 100px;
+    -fx-alignment: center;
+    -fx-column-halignment: 20;
+    -fx-font-weight: bold;
+    -fx-font-family: "Helvetica";
+    -fx-padding: 5 10 5 10;
+    -fx-background-radius: 5px;
+}

@@ -4,15 +4,184 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5421b5e3-8dcf-4462-a57d-53b24ecbffe0" name="Changes" comment="Zmiana mechznizmu końca gry">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="5421b5e3-8dcf-4462-a57d-53b24ecbffe0" name="Changes" comment="DO miejsca katastrofy - problem z CANVASEM">
+      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/DUNGEON_SPRINT2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ebfae5ae-b5d4-4029-8cd1-a397aacf6a64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ebfae5ae-b5d4-4029-8cd1-a397aacf6a64/storage_v2/_src_/database/server791429_DUNGEON.6hR9LQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ebfae5ae-b5d4-4029-8cd1-a397aacf6a64/storage_v2/_src_/database/server791429_DUNGEON.6hR9LQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ebfae5ae-b5d4-4029-8cd1-a397aacf6a64/storage_v2/_src_/database/server791429_DUNGEON.6hR9LQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ebfae5ae-b5d4-4029-8cd1-a397aacf6a64/storage_v2/_src_/database/server791429_DUNGEON.6hR9LQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/DUNGEON_SPRINT2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/dataSources/ebfae5ae-b5d4-4029-8cd1-a397aacf6a64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/dataSources/ebfae5ae-b5d4-4029-8cd1-a397aacf6a64/storage_v2/_src_/database/server791429_DUNGEON.6hR9LQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/dataSources/ebfae5ae-b5d4-4029-8cd1-a397aacf6a64/storage_v2/_src_/database/server791429_DUNGEON.6hR9LQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/dataSources/ebfae5ae-b5d4-4029-8cd1-a397aacf6a64/storage_v2/_src_/database/server791429_DUNGEON.6hR9LQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/dataSources/ebfae5ae-b5d4-4029-8cd1-a397aacf6a64/storage_v2/_src_/database/server791429_DUNGEON.6hR9LQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/Tiles$Tile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/Tiles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/controllers/Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/controllers/DBUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/controllers/ExitController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/controllers/Game.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/controllers/MainController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/controllers/SigneUpController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/controllers/SoundEffect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/controllers/Welcome.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/Cell.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/CellType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/Drawable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/GameMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/MapLoader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/actors/Actor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/actors/Bat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/actors/Enemies.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/actors/Ghost.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/actors/Gnome.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/actors/Player.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/actors/Scorpio.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/actors/Skeleton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/actors/Spider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/items/Diamond.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/items/Heart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/items/Helmet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/items/Item.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/items/Key.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/items/Potion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/items/Shield.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/java/com/codecool/dungeoncrawl/logic/items/Sword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/avatars/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/css/end.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/css/start.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/fxml/MainScreen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/fxml/logged-in.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/fxml/welcome.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/icones/diamond.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/icones/drink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/icones/heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/icones/helmet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/icones/key.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/icones/key_no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/icones/knight.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/icones/man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/icones/man.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/icones/player.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/icones/shield.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/icones/sword.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/images/SCREEN_END.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/images/SCREEN_START.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/images/startekr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/images/tiles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/map/map_level1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/map/map_level10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/map/map_level2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/map/map_level3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/map/map_level4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/map/map_level5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/map/map_level6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/map/map_level7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/map/map_level8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/map/map_level9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/other/Prezentacja.pptx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/other/projekty.pptx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/sound/sound_dead.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/sound/sound_drinking.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/sound/sound_getting-hit.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/sound/sound_man-scream.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/main/resources/sound/sound_success.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/test/java/com/codecool/dungeoncrawl/logic/ActorTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/src/test/java/com/codecool/dungeoncrawl/logic/CellTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/controllers/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/controllers/LogInController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/controllers/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/controllers/WelcomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/utils/DBUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/utils/UtilsTextHandling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/avatars/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dbini/dbini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/ExitScreen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/LogInScreen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/MainScreen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/SignUpScreen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/WelcomeScreen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sound/intro.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/Tiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/Tiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/controllers/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/controllers/DBUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/controllers/ExitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/controllers/ExitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/controllers/SigneUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/controllers/SigneUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/controllers/SoundEffect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/utils/SoundEffect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/logic/MapLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/logic/MapLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/logic/actors/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/logic/actors/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/logic/items/Diamond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/logic/items/Diamond.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/logic/items/Helmet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/logic/items/Helmet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/logic/items/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/logic/items/Potion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/GameScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/goodbye.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/logged-in.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/sign-in.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/src/main/resources/fxml/sign-in.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/map/map_level1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/map/map_level1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sound/sound_bats.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/bin/src/main/resources/sound/sound_bats.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sound/sound_ghost.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/bin/src/main/resources/sound/sound_ghost.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/Tiles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/Tiles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/controllers/Controller$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/controllers/Controller$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/controllers/Controller$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/controllers/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/controllers/DBUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/controllers/ExitController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/controllers/ExitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/controllers/ExitController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/controllers/SigneUpController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/controllers/SigneUpController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/controllers/SigneUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/controllers/SigneUpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/controllers/SoundEffect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/logic/MapLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/logic/MapLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/logic/actors/Actor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/logic/actors/Actor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/logic/items/Diamond.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/logic/items/Diamond.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/logic/items/Helmet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/logic/items/Helmet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/logic/items/Potion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/logic/items/Potion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/src/main/resources/fxml/game.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/goodbye.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/bin/src/main/resources/fxml/goodbye.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/logged-in.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/sign-in.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/map/map_level1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/map/map_level1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sound/sound_bats.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sound/sound_ghost.mp3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +191,16 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="module-info" />
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -30,6 +209,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/resources/fxml/GameScreen.fxml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -51,40 +233,63 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/bojar/Documents/NAUKA/PROJEKTY/DUNGEON_SPRINT2",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.21149425",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.codecool.dungeoncrawl.controllers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\bojar\Documents\NAUKA\PROJEKTY\DUNGEON_SPRINT2\src\main\resources\fxml" />
       <recent name="C:\Users\bojar\Documents\NAUKA\CODECOOL\JAVA\dungeon-crawl-1-java-igadbk\src\main\resources\icones" />
       <recent name="C:\Users\bojar\Documents\NAUKA\CODECOOL\JAVA\dungeon-crawl-1-java-igadbk\src\main\java\com\codecool\dungeoncrawl" />
       <recent name="C:\Users\bojar\Documents\NAUKA\CODECOOL\JAVA\dungeon-crawl-1-java-igadbk\src\main\resources\fxml" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bojar\Documents\NAUKA\PROJEKTY\DUNGEON_SPRINT2\src\main\resources" />
       <recent name="C:\Users\bojar\Documents\NAUKA\CODECOOL\JAVA\dungeon-crawl-1-java-igadbk\src\main\resources\other" />
       <recent name="C:\Users\bojar\Documents\NAUKA\CODECOOL\JAVA\dungeon-crawl-1-java-igadbk\src\main\resources\images" />
       <recent name="C:\Users\bojar\Documents\NAUKA\CODECOOL\JAVA\dungeon-crawl-1-java-igadbk\src\main\resources\css" />
       <recent name="C:\Users\bojar\Documents\NAUKA\CODECOOL\JAVA\dungeon-crawl-1-java-igadbk\src\main\resources" />
-      <recent name="C:\Users\bojar\Documents\NAUKA\CODECOOL\JAVA\dungeon-crawl-1-java-igadbk\src\main\resources\icones" />
+    </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="com.codecool.dungeoncrawl.controllers.utilsTextHandling" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.codecool.dungeoncrawl.controllers" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.codecool.dungeoncrawl.controllers" />
       <recent name="com.codecool.dungeoncrawl.logic.items" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunAnythingContextRecentDirectoryCache">
+    <option name="paths">
+      <recentPaths value="$PROJECT_DIR$" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.codecool.dungeoncrawl.App" />
       <module name="dungeon-crawl" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.codecool.dungeoncrawl.controllers.*" />
+          <option name="PATTERN" value="com.codecool.dungeoncrawl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,6 +297,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.codecool.dungeoncrawl.Main" />
+      <module name="dungeon-crawl" />
+      <option name="PROGRAM_PARAMETERS" value="Error: JavaFX runtime components are missing, and are required to run this application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.codecool.dungeoncrawl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.codecool.dungeoncrawl.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JarApplication">
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
@@ -106,6 +339,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668844701352</updated>
+      <workItem from="1669581734451" duration="94000" />
+      <workItem from="1669583132245" duration="168000" />
+      <workItem from="1669585273247" duration="17000" />
+      <workItem from="1669664161280" duration="90000" />
+      <workItem from="1669664608418" duration="14000" />
+      <workItem from="1669664665117" duration="1692000" />
+      <workItem from="1669668034282" duration="2230000" />
+      <workItem from="1669678128987" duration="344000" />
+      <workItem from="1669765650227" duration="14000" />
+      <workItem from="1669765832720" duration="740000" />
+      <workItem from="1669766583782" duration="11000" />
+      <workItem from="1669795701736" duration="10000" />
+      <workItem from="1669917216871" duration="9000" />
+      <workItem from="1669980010685" duration="811000" />
+      <workItem from="1669980937114" duration="2105000" />
+      <workItem from="1669984207525" duration="1040000" />
+      <workItem from="1670060825321" duration="125000" />
     </task>
     <task id="LOCAL-00001" summary="Zmiana mechznizmu końca gry">
       <created>1668851927861</created>
@@ -177,8 +427,25 @@
       <option name="project" value="LOCAL" />
       <updated>1668856029592</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="PIERWSZY ETAP parc">
+      <created>1669562032185</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669562032185</updated>
+    </task>
+    <task id="LOCAL-00012" summary="PIERWSZY ETAP parc">
+      <created>1669562110096</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669562110096</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -193,7 +460,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Zmiana mechznizmu końca gry" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zmiana mechznizmu końca gry" />
+    <MESSAGE value="PIERWSZY ETAP parc" />
+    <MESSAGE value="DO miejsca katastrofy - problem z CANVASEM" />
+    <option name="LAST_COMMIT_MESSAGE" value="DO miejsca katastrofy - problem z CANVASEM" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
