@@ -82,7 +82,7 @@ public abstract class Actor implements Drawable {
     public boolean isKey() {return key;}
     public int[] getInventory() {return inventory;}
 
-
+    //(0-health, 1-sword, 2-shield, 3-helmet, 4-heart, 5-potion, 6-diamond, 7key)
     public void takeItem(Item item) {
         if (item instanceof Diamond) {
             if(health == 0 ) {
@@ -112,8 +112,8 @@ public abstract class Actor implements Drawable {
 
         } else if (item instanceof Sword) {
             if(inventory[1] == 0 ) {
-                inventory[1]+=((Sword) item).getHitPower();
-                ((Sword) item).setHitPower(0);
+                inventory[1]+=((Sword) item).getSword();
+                ((Sword) item).setSword(0);
                 item.getCell().setType(CellType.FLOOR);
             }
 
@@ -126,13 +126,13 @@ public abstract class Actor implements Drawable {
 
         } else if (item instanceof Helmet) {
             if(inventory[3] == 0 ) {
-                inventory[3]+=((Sword) item).getHitPower();
+                inventory[3]+=((Helmet) item).getHelmet();
                 ((Helmet) item).setHelmet(0);
                 item.getCell().setType(CellType.FLOOR);
             }
 
         } else if (item instanceof Key && !((Key) item).isTaken()) {
-            inventory[4]+=1;
+            inventory[7]+=1;
             key = true;
             ((Key) item).setTaken(true);
             item.getCell().setType(CellType.FLOOR);

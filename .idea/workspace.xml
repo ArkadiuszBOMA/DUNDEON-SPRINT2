@@ -5,17 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5421b5e3-8dcf-4462-a57d-53b24ecbffe0" name="Changes" comment="DO miejsca katastrofy - problem z CANVASEM">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/ebfae5ae-b5d4-4029-8cd1-a397aacf6a64.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ebfae5ae-b5d4-4029-8cd1-a397aacf6a64.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ebfae5ae-b5d4-4029-8cd1-a397aacf6a64/storage_v2/_src_/database/server791429_DUNGEON.6hR9LQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ebfae5ae-b5d4-4029-8cd1-a397aacf6a64/storage_v2/_src_/database/server791429_DUNGEON.6hR9LQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/controllers/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/utils/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/utils/DBUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dbini/dbini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/GameScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/GameScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/MainScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/MainScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/logic/actors/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/logic/actors/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/logic/items/Helmet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/logic/items/Helmet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/logic/items/Shield.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/logic/items/Shield.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/logic/items/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codecool/dungeoncrawl/logic/items/Sword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/ExitScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/ExitScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/LogInScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/LogInScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/SignUpScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/SignUpScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/logic/actors/Actor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/logic/actors/Actor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/logic/items/Helmet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/logic/items/Helmet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/logic/items/Shield.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/logic/items/Shield.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/logic/items/Sword.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codecool/dungeoncrawl/logic/items/Sword.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +75,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CODECOOL/JAVA/codecool-shop-1-java-igadbk" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2639485" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -179,7 +183,23 @@
       <workItem from="1670102700342" duration="304000" />
       <workItem from="1670103273522" duration="211000" />
       <workItem from="1670103671154" duration="1124000" />
-      <workItem from="1670105774941" duration="1389000" />
+      <workItem from="1670105774941" duration="1899000" />
+      <workItem from="1670141571115" duration="728000" />
+      <workItem from="1670147364200" duration="982000" />
+      <workItem from="1670148554603" duration="9000" />
+      <workItem from="1670148872169" duration="85000" />
+      <workItem from="1670151243744" duration="5000" />
+      <workItem from="1670151268775" duration="331000" />
+      <workItem from="1670151714907" duration="22000" />
+      <workItem from="1670153145658" duration="836000" />
+      <workItem from="1670155704704" duration="198000" />
+      <workItem from="1670155929196" duration="167000" />
+      <workItem from="1670160281543" duration="665000" />
+      <workItem from="1670163495385" duration="385000" />
+      <workItem from="1670164017498" duration="2498000" />
+      <workItem from="1670166616979" duration="29000" />
+      <workItem from="1670166779000" duration="12000" />
+      <workItem from="1670256982724" duration="510000" />
     </task>
     <task id="LOCAL-00001" summary="Zmiana mechznizmu końca gry">
       <created>1668851927861</created>
@@ -272,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670063430564</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="DO miejsca katastrofy - problem z CANVASEM">
+      <created>1670107463445</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670107463446</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

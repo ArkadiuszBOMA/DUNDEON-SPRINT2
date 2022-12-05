@@ -10,7 +10,6 @@ public class Shield extends Item {
     public int getShield() {
         return protectionPower;
     }
-
     public void setShield(int shield) {
         this.protectionPower = shield;
     }

@@ -10,271 +10,234 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: black; -fx-border-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codecool.dungeoncrawl.controllers.GameController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyReleased="#onKeyPressed" style="-fx-background-color: black; -fx-border-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codecool.dungeoncrawl.controllers.GameController">
    <right>
-      <SplitPane dividerPositions="0.09597523219814241, 0.22910216718266255, 0.48606811145510836" orientation="VERTICAL"
-                 prefHeight="450.0" prefWidth="200.0" style="-fx-padding: 0;" BorderPane.alignment="CENTER">
+      <SplitPane dividerPositions="0.09597523219814241, 0.22910216718266255, 0.48606811145510836" orientation="VERTICAL" prefHeight="450.0" prefWidth="200.0" style="-fx-padding: 0;" BorderPane.alignment="CENTER">
          <BorderPane.margin>
-            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
          </BorderPane.margin>
-         <AnchorPane pickOnBounds="false" prefHeight="150.0" prefWidth="150.0"
-                     style="-fx-background-color: black; -fx-border-color: black; -fx-padding: 0;">
-            <TextField fx:id="game_level" accessibleRole="TEXT" alignment="CENTER" depthTest="DISABLE"
-                       editable="false" prefHeight="34.0" prefWidth="159.0" promptText="Game Level 1"
-                       style="-fx-background-color: black; -fx-border-color: black; -fx-text-fill: white;"
-                       AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
-                       AnchorPane.topAnchor="0.0">
+         <AnchorPane pickOnBounds="false" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: black; -fx-border-color: black; -fx-padding: 0;">
+            <TextField fx:id="game_level" accessibleRole="TEXT" alignment="CENTER" depthTest="DISABLE" editable="false" prefHeight="34.0" prefWidth="159.0" promptText="Game Level 1" style="-fx-background-color: black; -fx-border-color: black; -fx-text-fill: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <font>
-                  <Font name="Old English Text MT" size="26.0"/>
+                  <Font name="Old English Text MT" size="26.0" />
                </font>
                <padding>
-                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                </padding>
             </TextField>
          </AnchorPane>
-         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="84.0" prefWidth="200.0"
-                     style="-fx-background-color: black; -fx-border-color: black; -fx-padding: 0;">
+         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="84.0" prefWidth="200.0" style="-fx-background-color: black; -fx-border-color: black; -fx-padding: 0;">
             <padding>
-               <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+               <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
             </padding>
-            <TextField fx:id="player" accessibleRole="TEXT" alignment="CENTER" editable="false" layoutX="14.0"
-                       layoutY="55.0" prefHeight="80.0" prefWidth="200.0"
-                       style="-fx-background-color: black; -fx-text-fill: white;" AnchorPane.bottomAnchor="0.0"
-                       AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <TextField fx:id="player" accessibleRole="TEXT" alignment="CENTER" editable="false" layoutX="14.0" layoutY="55.0" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: black; -fx-text-fill: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <font>
-                  <Font name="Old English Text MT" size="25.0"/>
+                  <Font name="Old English Text MT" size="25.0" />
                </font>
             </TextField>
          </AnchorPane>
-         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="244.0" prefWidth="200.0"
-                     style="-fx-background-color: black; -fx-border-color: black; -fx-padding: 0;">
-            <GridPane prefHeight="90.0" prefWidth="90.0" style="-fx-border-color: transparent; -fx-padding: 0;"
-                      AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0"
-                      AnchorPane.topAnchor="20.0">
+         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="244.0" prefWidth="200.0" style="-fx-background-color: black; -fx-border-color: black; -fx-padding: 0;">
+            <GridPane prefHeight="90.0" prefWidth="90.0" style="-fx-border-color: transparent; -fx-padding: 0;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="20.0">
                <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="10.0" prefWidth="70.0"/>
-                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="10.0" prefWidth="50.0"/>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="10.0" prefWidth="70.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="10.0" prefWidth="50.0" />
                </columnConstraints>
                <rowConstraints>
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
-                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
-               <ImageView fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER"
-                          GridPane.valignment="CENTER">
+               <ImageView fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                   <GridPane.margin>
-                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                   </GridPane.margin>
                   <effect>
                      <Lighting>
                         <bumpInput>
-                           <Shadow/>
+                           <Shadow />
                         </bumpInput>
                         <light>
-                           <Light.Distant/>
+                           <Light.Distant />
                         </light>
                      </Lighting>
                   </effect>
-                  <Image url="@../icones/heart.png"/>
+                  <Image url="@../icones/heart.png" />
                </ImageView>
-               <TextField fx:id="c_heart" alignment="CENTER" editable="false" prefHeight="30.0" prefWidth="30.0"
-                          promptText="0" style="-fx-background-color: black; -fx-text-fill: white;"
-                          GridPane.columnIndex="1">
+               <TextField fx:id="c_heart" alignment="CENTER" editable="false" prefHeight="30.0" prefWidth="30.0" promptText="0" style="-fx-background-color: black; -fx-text-fill: white;" GridPane.columnIndex="1">
                   <font>
-                     <Font name="Old English Text MT" size="23.0"/>
+                     <Font name="Old English Text MT" size="23.0" />
                   </font>
                </TextField>
-               <ImageView fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER"
-                          GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <ImageView fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                   <GridPane.margin>
-                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                   </GridPane.margin>
                   <effect>
                      <Lighting>
                         <bumpInput>
-                           <Shadow/>
+                           <Shadow />
                         </bumpInput>
                         <light>
-                           <Light.Distant/>
+                           <Light.Distant />
                         </light>
                      </Lighting>
                   </effect>
-                  <Image url="@../icones/drink.png"/>
+                  <Image url="@../icones/drink.png" />
                </ImageView>
-               <TextField fx:id="c_potion" alignment="CENTER" editable="false" prefHeight="30.0" prefWidth="30.0"
-                          promptText="0" style="-fx-background-color: black; -fx-text-fill: white;"
-                          GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <TextField fx:id="c_potion" alignment="CENTER" editable="false" prefHeight="30.0" prefWidth="30.0" promptText="0" style="-fx-background-color: black; -fx-text-fill: white;" GridPane.columnIndex="1" GridPane.rowIndex="1">
                   <font>
-                     <Font name="Old English Text MT" size="23.0"/>
+                     <Font name="Old English Text MT" size="23.0" />
                   </font>
                </TextField>
-               <ImageView fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER"
-                          GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <ImageView fitWidth="30.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                   <GridPane.margin>
-                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                     <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                   </GridPane.margin>
                   <effect>
                      <Lighting>
                         <bumpInput>
-                           <Shadow/>
+                           <Shadow />
                         </bumpInput>
                         <light>
-                           <Light.Distant/>
+                           <Light.Distant />
                         </light>
                      </Lighting>
                   </effect>
-                  <Image url="@../icones/diamond.png"/>
+                  <Image url="@../icones/diamond.png" />
                </ImageView>
-               <TextField fx:id="c_diamond" alignment="CENTER" editable="false" prefHeight="30.0" prefWidth="30.0"
-                          promptText="0"
-                          style="-fx-background-color: black; -fx-text-fill: white; -fx-padding: 0;"
-                          GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <TextField fx:id="c_diamond" alignment="CENTER" editable="false" prefHeight="30.0" prefWidth="30.0" promptText="0" style="-fx-background-color: black; -fx-text-fill: white; -fx-padding: 0;" GridPane.columnIndex="1" GridPane.rowIndex="2">
                   <font>
-                     <Font name="Old English Text MT" size="23.0"/>
+                     <Font name="Old English Text MT" size="23.0" />
                   </font>
                </TextField>
             </GridPane>
          </AnchorPane>
-         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="259.0" prefWidth="200.0"
-                     style="-fx-background-color: black; -fx-border-color: black;">
-            <ImageView fitHeight="238.0" fitWidth="153.0" layoutX="50.0" layoutY="53.0" pickOnBounds="true"
-                       preserveRatio="true">
-               <Image url="@../icones/man.png"/>
+         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="259.0" prefWidth="200.0" style="-fx-background-color: black; -fx-border-color: black;">
+            <ImageView fitHeight="238.0" fitWidth="153.0" layoutX="50.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@../icones/man.png" />
             </ImageView>
-            <ImageView fx:id="c_shield" fitHeight="81.0" fitWidth="82.0" layoutX="34.0" layoutY="121.0"
-                       pickOnBounds="true" preserveRatio="true" rotate="-26.6">
-               <Image url="@../icones/shield.png"/>
+            <ImageView fx:id="c_shield" fitHeight="81.0" fitWidth="82.0" layoutX="34.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true" rotate="-26.6">
+               <Image url="@../icones/shield.png" />
                <effect>
                   <Lighting>
                      <bumpInput>
-                        <Shadow/>
+                        <Shadow />
                      </bumpInput>
                      <light>
                         <Light.Distant>
                            <color>
-                              <Color red="0.7686274647712708" green="0.6117647290229797" blue="0.3529411852359772"/>
+                              <Color red="0.7686274647712708" green="0.6117647290229797" blue="0.3529411852359772" />
                            </color>
                         </Light.Distant>
                      </light>
                   </Lighting>
                </effect>
             </ImageView>
-            <ImageView fx:id="c_helmet" fitHeight="44.0" fitWidth="53.0" layoutX="84.0" layoutY="31.0"
-                       pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="c_helmet" fitHeight="44.0" fitWidth="53.0" layoutX="84.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
                <effect>
                   <Lighting>
                      <bumpInput>
-                        <Shadow/>
+                        <Shadow />
                      </bumpInput>
                      <light>
                         <Light.Distant>
                            <color>
-                              <Color red="0.7686274647712708" green="0.6117647290229797" blue="0.3529411852359772"/>
+                              <Color red="0.7686274647712708" green="0.6117647290229797" blue="0.3529411852359772" />
                            </color>
                         </Light.Distant>
                      </light>
                   </Lighting>
                </effect>
-               <Image url="@../icones/helmet.png"/>
+               <Image url="@../icones/helmet.png" />
             </ImageView>
-            <ImageView fx:id="c_sword" fitHeight="93.0" fitWidth="76.0" layoutX="87.0" layoutY="168.0"
-                       pickOnBounds="true" preserveRatio="true" rotate="175.2">
+            <ImageView fx:id="c_sword" fitHeight="93.0" fitWidth="76.0" layoutX="87.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true" rotate="175.2">
                <effect>
                   <Lighting>
                      <bumpInput>
-                        <Shadow/>
+                        <Shadow />
                      </bumpInput>
                      <light>
                         <Light.Distant>
                            <color>
-                              <Color red="0.7686274647712708" green="0.6117647290229797" blue="0.3529411852359772"/>
+                              <Color red="0.7686274647712708" green="0.6117647290229797" blue="0.3529411852359772" />
                            </color>
                         </Light.Distant>
                      </light>
                   </Lighting>
                </effect>
-               <Image url="@../icones/sword.png"/>
+               <Image url="@../icones/sword.png" />
             </ImageView>
-            <ImageView fx:id="key" fitHeight="103.0" fitWidth="63.0" layoutX="13.0" layoutY="22.0"
-                       pickOnBounds="true" preserveRatio="true" rotate="-45.0">
-               <Image url="@../icones/key.png"/>
+            <ImageView fx:id="key" fitHeight="103.0" fitWidth="63.0" layoutX="13.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" rotate="-45.0">
+               <Image url="@../icones/key.png" />
             </ImageView>
          </AnchorPane>
       </SplitPane>
    </right>
    <bottom>
       <AnchorPane prefHeight="50.0" prefWidth="10.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
-         <Button fx:id="button_save_g" alignment="CENTER" contentDisplay="CENTER" layoutX="85.0" layoutY="15.0"
-                 mnemonicParsing="false" prefHeight="0.0" prefWidth="90.0" style="-fx-background-color: grey;"
-                 text="Save" textAlignment="CENTER" textFill="#060e40" AnchorPane.topAnchor="15.0">
+         <Button fx:id="button_save_g" alignment="CENTER" contentDisplay="CENTER" layoutX="85.0" layoutY="15.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="90.0" style="-fx-background-color: grey;" text="Save" textAlignment="CENTER" textFill="#060e40" AnchorPane.topAnchor="15.0">
             <padding>
-               <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+               <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
             </padding>
             <cursor>
-               <Cursor fx:constant="HAND"/>
+               <Cursor fx:constant="HAND" />
             </cursor>
             <effect>
                <Lighting>
                   <bumpInput>
-                     <Shadow/>
+                     <Shadow />
                   </bumpInput>
                   <light>
-                     <Light.Distant/>
+                     <Light.Distant />
                   </light>
                </Lighting>
             </effect>
          </Button>
-         <Button alignment="CENTER" contentDisplay="CENTER" layoutX="310.0" layoutY="15.0" mnemonicParsing="false"
-                 onAction="#exitScreen" prefHeight="0.0" prefWidth="90.0" style="-fx-background-color: grey;"
-                 text="Quit" textAlignment="CENTER" textFill="#060e40" AnchorPane.topAnchor="14.0">
+         <Button alignment="CENTER" contentDisplay="CENTER" layoutX="310.0" layoutY="15.0" mnemonicParsing="false" onAction="#exitScreen" prefHeight="0.0" prefWidth="90.0" style="-fx-background-color: grey;" text="Quit" textAlignment="CENTER" textFill="#060e40" AnchorPane.topAnchor="14.0">
             <padding>
-               <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+               <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
             </padding>
             <cursor>
-               <Cursor fx:constant="HAND"/>
+               <Cursor fx:constant="HAND" />
             </cursor>
             <effect>
                <Lighting>
                   <bumpInput>
-                     <Shadow/>
+                     <Shadow />
                   </bumpInput>
                   <light>
-                     <Light.Distant/>
+                     <Light.Distant />
                   </light>
                </Lighting>
             </effect>
          </Button>
-         <Button alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="15.0" mnemonicParsing="false"
-                 onAction="#welcomeScreen" prefHeight="0.0" prefWidth="90.0" style="-fx-background-color: grey;"
-                 text="Main menu" textAlignment="CENTER" textFill="#060e40" AnchorPane.topAnchor="14.0">
+         <Button alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="15.0" mnemonicParsing="false" onAction="#welcomeScreen" prefHeight="0.0" prefWidth="90.0" style="-fx-background-color: grey;" text="Main menu" textAlignment="CENTER" textFill="#060e40" AnchorPane.topAnchor="14.0">
             <padding>
-               <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+               <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
             </padding>
             <effect>
                <Lighting>
                   <bumpInput>
-                     <Shadow/>
+                     <Shadow />
                   </bumpInput>
                   <light>
-                     <Light.Distant/>
+                     <Light.Distant />
                   </light>
                </Lighting>
             </effect>
          </Button>
-         <Text fx:id="infoText" fill="#871717" layoutX="450.0" layoutY="33.58203125" smooth="false" strokeLineCap="BUTT"
-               strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER"
-               wrappingWidth="350.13671875" AnchorPane.topAnchor="11.0">
+         <Text fx:id="infoText" fill="#871717" layoutX="450.0" layoutY="33.58203125" smooth="false" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="350.13671875" AnchorPane.topAnchor="11.0">
             <font>
-               <Font size="20.0"/>
+               <Font size="20.0" />
             </font>
          </Text>
          <ImageView fitHeight="47.0" fitWidth="29.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
-            <Image url="@../icones/knight.jpg"/>
+            <Image url="@../icones/knight.jpg" />
          </ImageView>
       </AnchorPane>
    </bottom>
    <center>
-      <Canvas fx:id="canvas" height="640.0" onKeyPressed="#onKeyPressed" width="800.0" BorderPane.alignment="CENTER">
+      <Canvas fx:id="canvas" height="640.0" width="800.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </BorderPane.margin>

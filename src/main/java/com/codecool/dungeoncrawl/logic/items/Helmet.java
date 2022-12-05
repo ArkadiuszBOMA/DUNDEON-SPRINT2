@@ -10,7 +10,6 @@ public class Helmet extends Item {
     public int getHelmet() {
         return protectionPower;
     }
-
     public void setHelmet(int helmet) {
         this.protectionPower = helmet;
     }

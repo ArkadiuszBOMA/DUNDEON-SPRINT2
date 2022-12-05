@@ -4,13 +4,14 @@ import com.codecool.dungeoncrawl.logic.Cell;
 
 public class Sword extends Item {
     int hitPower = 1;
-    public int getHitPower() {
+
+    public int getSword() {
         return hitPower;
     }
-
-    public void setHitPower(int hitPower) {
+    public void setSword(int sword) {
         this.hitPower = hitPower;
     }
+
 
     public Sword(Cell cell, String name, boolean canTake) {
         super(cell, name, canTake);
@@ -21,5 +22,4 @@ public class Sword extends Item {
     public String getTileName() {
         return "weapon";
     }
-
 }

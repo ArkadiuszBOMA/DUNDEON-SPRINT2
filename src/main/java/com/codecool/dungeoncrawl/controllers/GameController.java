@@ -65,30 +65,14 @@ public class GameController{
     @FXML
 
     public void start(String name) throws Exception {
-        setLevel(1);
-        FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("/fxml/GameScreen.fxml"));
-        BorderPane borderPane;
-        try{
-            borderPane = fxmlLoader.load();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
         name = UtilsTextHandling.capitalized(name);
         player.setText(name);
         game_level.setText("Game level 1");
-
-
         map.getPlayer().setName(player.getText());
-
         infoText.setText("Find the key");
-
         c_heart.setText("" + map.getPlayer().getHealth());
         c_potion.setText("" + Array.get(map.getPlayer().getInventory(), 5));
         c_diamond.setText("" + Array.get(map.getPlayer().getInventory(), 4));
-
-        mainController.setScreen(borderPane);
-
         refresh();
     }
 
@@ -252,7 +236,16 @@ public class GameController{
 
     @FXML
     private void refresh() {
+        FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("/fxml/GameScreen.fxml"));
+        BorderPane borderPane;
+        try{
+            borderPane = fxmlLoader.load();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
         GraphicsContext context = canvas.getGraphicsContext2D();
+
         int coutEnemies = 0;
         for (int x = 0; x < map.getWidth(); x++) {
             for (int y = 0; y < map.getHeight(); y++){
@@ -289,15 +282,28 @@ public class GameController{
                 }
             }
         }
-        refreshLabels();
+
+
+        refreshLabels(canvas);
     }
 
     @FXML
-    private void refreshLabels() {
+    private void refreshLabels(Canvas canvas) {
+        FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("/fxml/GameScreen.fxml"));
+        BorderPane borderPane;
+        try{
+            borderPane = fxmlLoader.load();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        player.setText(map.getPlayer().getName());
         game_level.setText("Game Level " + this.level);
         c_heart.setText("" + map.getPlayer().getHealth());
         c_potion.setText("" + Array.get(map.getPlayer().getInventory(), 5));
         c_diamond.setText("" + Array.get(map.getPlayer().getInventory(), 4));
+
+        System.out.println(map.getPlayer().getInventory()[1] + " " + map.getPlayer().getInventory()[2] + " " + map.getPlayer().getInventory()[7]);
+
         if(map.getPlayer().getInventory()[1] != 0) {c_sword.setVisible(true);}
         if(map.getPlayer().getInventory()[2] != 0) {c_shield.setVisible(true);}
         if(map.getPlayer().getInventory()[3] != 0) {c_helmet.setVisible(true);}
@@ -311,7 +317,8 @@ public class GameController{
             map = MapLoader.loadMap(level);
             canvas.setWidth(25 * Tiles.TILE_WIDTH + 12);
             canvas.setHeight(21 * Tiles.TILE_WIDTH + 12);
-
         }
+        map = MapLoader.loadMap(level);
+        mainController.setScreen(borderPane);
     }
 }
